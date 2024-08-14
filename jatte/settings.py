@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'account',
     'core',
+    'chat',
 ]
 
 MIDDLEWARE = [
@@ -77,6 +78,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'jatte.wsgi.application'
 ASGI_APPLICATION = 'jatte.asgi.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    }
+}
 
 
 # Database
