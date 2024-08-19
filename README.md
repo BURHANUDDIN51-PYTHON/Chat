@@ -102,16 +102,14 @@ CHANNEL_LAYERS = {
     }
 }
 
-Tailwind CSS
+# Tailwind CSS
 Make sure Tailwind CSS is set up in your project. Typically, this involves installing Tailwind via npm and configuring your tailwind.config.js and postcss.config.js files.
 
-Usage
+# Usage
 User Authentication: Sign up or log in to access the Teams application.
-Create/Join Teams: Users can create or join existing teams.
+Create/Join Teams: Users can create.
 Real-Time Chat: Communicate with team members in real-time using the chat feature.
-Notifications: Receive notifications for new messages or activities within the team.
-Contributing
 If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-License
+# License
 This project is licensed under the MIT License. See the LICENSE file for more details.
