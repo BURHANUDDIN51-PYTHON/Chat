@@ -13,7 +13,7 @@ class Message(models.Model):
         ordering = ('created_at',)
         
     def __str__(self):
-        return f"{self.sent_by}"
+        return f"{self.sent_by}-{self.body}"
     
     
 class Room(models.Model):

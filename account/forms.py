@@ -45,3 +45,24 @@ class EditUserForm(forms.ModelForm):
                 'class': 'w-full py-4 px-6 rounded-xl border'
             })
         }
+        
+        
+class CreateUserForm(forms.ModelForm):
+    ...
+    class Meta  :
+        model = User
+        fields = ('email', 'name', "password",)
+        widgets = {
+            'email': forms.TextInput(attrs={
+                'class': 'w-full py-4 px-6 rounded-xl border'
+            }),
+            'name': forms.TextInput(attrs={
+                'class': 'w-full py-4 px-6 rounded-xl border'
+            }),
+             'password': forms.PasswordInput(attrs={
+                'class': 'w-full py-4 px-6 rounded-xl border'
+            }),
+        } 
+  
+    
+        
